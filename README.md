@@ -1,8 +1,9 @@
 # bank-financial-analysis
 
+![In Progress](https://img.shields.io/badge/status-in%20progress-yellow)
+
 ## 🔹 Obiettivo del progetto
 Questo progetto ha l'obiettivo di effettuare un'analisi comparativa di 10 banche utilizzando dati finanziari pubblici.  
-Sono stati calcolati KPI chiave come ROE, ROA, Cost-to-Income Ratio, e visualizzati trend temporali e confronti tra istituti. 
 
 ---
 
@@ -64,6 +65,21 @@ Aprire il notebook desiderato nella cartella notebooks/ per eseguire l'analisi.
 3. Infine, disattivare il venv:
    deactivate
 
+## 🔹 Dataset
+
+- Per la descrizione completa del dataset, la sua struttura e il contenuto, vedere il file [docs/dataset.md](docs/dataset.md).
+
+
+## 🔹 Data Cleaning
+
+Il notebook `01_data_cleaning.ipynb` contiene il processo di pulizia del dataset:
+- normalizzazione nomi colonne
+- gestione valori mancanti
+- controllo tipi dati
+- rimozione duplicati
+
+Per dettagli completi, vedere [docs/data_cleaning.md](docs/data_cleaning.md)
+
 
 ## 🔹 Struttura della repo
     bank-financial-analysis/
@@ -90,6 +106,7 @@ Aprire il notebook desiderato nella cartella notebooks/ per eseguire l'analisi.
     ├── README.md            
     ├── .gitignore           
     └── LICENSE
+
 
 ## 🔹 Risultati principali
 Trend di crescita delle principali banche
