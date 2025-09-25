@@ -58,6 +58,10 @@ df.to_csv('../data/processed/dataset_clean.csv', index=False)
 ```
 
 
+Per la trasformazione dei dati, vedere [./data_transforming.md](./data_transforming.md)
+
+
+
 ## 🔹 Note aggiuntive
 Il dataset originale (data/raw/dataset.csv) rimane intatto.
 Il notebook include commenti e celle Markdown che spiegano ogni passaggio.

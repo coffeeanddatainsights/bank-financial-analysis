@@ -17,3 +17,6 @@
 **Struttura:**
 - Ogni riga corrisponde a un record giornaliero della banca.
 - I nomi delle colonne sono descrittivi e potrebbero richiedere pulizia prima dell’analisi.
+
+
+Per la pulizia dei dati, vedere [./data_cleaning.md](./data_cleaning.md)

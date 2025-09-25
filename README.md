@@ -81,6 +81,30 @@ Il notebook `01_data_cleaning.ipynb` contiene il processo di pulizia del dataset
 Per dettagli completi, vedere [docs/data_cleaning.md](docs/data_cleaning.md)
 
 
+## 🔹 Data Transformation
+
+Il notebook `02_data_transformation.ipynb` contiene il processo di trasformazione del dataset:
+- creazione di nuove colonne e indicatori finanziari (ROA, ROE, cost/income ratio, net interest margin, ecc.)
+- calcolo dei tassi di crescita percentuali
+- gestione di valori anomali (NaN, infiniti, outlier)
+- salvataggio del dataset trasformato per le analisi successive
+
+Per dettagli completi, vedere [docs/data_transforming.md](docs/data_transforming.md)
+
+
+## 🔹 KPI Analysis
+
+Il notebook `03_kpi_analysis.ipynb` contiene l’analisi dei principali KPI del dataset trasformato:
+- calcolo degli indicatori di redditività (ROA, ROE)
+- efficienza (Cost/Income Ratio)
+- margine di interesse (Net Interest Margin)
+- crescita (asset e utile netto)
+- visualizzazione grafica e salvataggio dei grafici in `reports/figures`
+- annotazione degli insight principali tramite celle Markdown
+
+Per dettagli completi, vedere [docs/kpi_analysis.md](docs/kpi_analysis.md)
+
+
 ## 🔹 Struttura della repo
     bank-financial-analysis/
     │
@@ -88,13 +112,20 @@ Per dettagli completi, vedere [docs/data_cleaning.md](docs/data_cleaning.md)
     │   ├── raw/             # dataset originali
     │   └── processed/       # dati puliti e pronti per l'analisi
     │
+    ├── docs
+    │   ├── data_cleaning.md
+    │   ├── data_transforming.md
+    │   ├── kpi_analysis.md    
+    │   └── dataset.md
+    │
     ├── notebooks/           # Jupyter Notebooks
     │   ├── 01_data_cleaning.ipynb
-    │   ├── 02_eda.ipynb
+    │   ├── 02_data_transformation.ipynb
     │   └── 03_kpi_analysis.ipynb
     │
-    ├── src/                 # script Python
-    │   ├── data_preprocessing.py
+    ├── src/              # script Python
+    │   ├── lib/            # librerie/utility comuni
+    │   │   └── utils.py
     │   ├── kpi_functions.py
     │   └── visualization.py
     │
@@ -104,8 +135,7 @@ Per dettagli completi, vedere [docs/data_cleaning.md](docs/data_cleaning.md)
     │
     ├── requirements.txt     
     ├── README.md            
-    ├── .gitignore           
-    └── LICENSE
+    └── .gitignore    
 
 
 ## 🔹 Risultati principali
